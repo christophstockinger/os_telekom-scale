@@ -1,0 +1,26 @@
+{
+  "name": "telekom-scale",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch src server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christophstockinger/os_telekom-scale.git"
+  },
+  "author": "Christoph Stockinger <cstockinger@c77.digital>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christophstockinger/os_telekom-scale/issues"
+  },
+  "homepage": "https://github.com/christophstockinger/os_telekom-scale#readme",
+  "dependencies": {
+    "@telekom/scale-components": "^3.0.0-beta.48"
+  },
+  "devDependencies": {
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}

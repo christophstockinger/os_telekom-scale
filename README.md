@@ -14,6 +14,6 @@ cd os_telekom-scale
 # 3. Install dependencies
 npm ci
 
-# 4. Start the server to watch index.thml
+# 4. Start the server to watch index.
 npm start
 ```
