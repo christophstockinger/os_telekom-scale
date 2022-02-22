@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github Issue 882 @telekom/scale</title>
+    <style>
+      *, *::before, *::after {
+        box-sizing: border-box;
+      }
+
+      * {
+        margin: 0;
+      }
+
+      html, body {
+        height: 100%;
+      }
+
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      img, picture, video, canvas, svg {
+        display: block;
+        max-width: 100%;
+      }
+
+      input, button, textarea, select {
+        font: inherit;
+      }
+
+      p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+      }
+
+      #root, #__next {
+        isolation: isolate;
+      }
+
+    </style>
+    <link
+  rel="stylesheet"
+  href="/node_modules/@telekom/scale-components/dist/scale-components/scale-components.css"
+/>
+<script
+  type="module"
+  src="/node_modules/@telekom/scale-components/dist/scale-components/scale-components.esm.js"
+></script>
+  </head>
+  <body>
+    <scale-app-shell>
+      <scale-app-header slot="header" class="header" logo-href="/de/" logo-title="Telekom" claim-lang="de" portal-name="Test">
+        <div slot="menu-main">
+          <scale-nav-main id="test1" name="Test1"></scale-nav-main>
+        <scale-nav-main id="test2" name="Test2"></scale-nav-main>
+          <scale-nav-main id="test3" name="Test3"></scale-nav-main>
+        </div>
+        <div slot="menu-addon">
+          <scale-nav-segment href="addon1">Addon 1</scale-nav-segment>
+          <scale-nav-segment href="/en/">Englisch</scale-nav-segment>
+        </div>
+        <div slot="menu-mobile">
+          <app-navigation-main-mobile>
+            <div class="main-navigation-mobile">
+              <ul class="main-navigation-mobile__main-menu">
+                <li class="main-navigation-mobile__item">
+                  <div class="main-navigation-mobile__item-wrapper">
+                    <a aria-current="true" aria-haspopup="true" class="main-navigation-mobile__item-link main-navigation-mobile__item-link--selected" href="test1">
+                      <span>Test 1</span>
+                      <span class="sr-only">active</span>
+                  </div>
+                  </a>
+                </li>
+                <li class="main-navigation-mobile__item">
+                  <div class="main-navigation-mobile__item-wrapper">
+                    <a aria-current="true" aria-haspopup="true" class="main-navigation-mobile__item-link" href="test1">
+                      <span>Test 1</span>
+                  </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </app-navigation-main-mobile>
+        </div>
+      </scale-app-header>
+      <div style="padding-top: 128px;">
+      <scale-grid >
+        <scale-grid-item>1</scale-grid-item>
+        <scale-grid-item>2</scale-grid-item>
+        <scale-grid-item>3</scale-grid-item>
+        <scale-grid-item>4</scale-grid-item>
+        <scale-grid-item>5</scale-grid-item>
+        <scale-grid-item>6</scale-grid-item>
+        <scale-grid-item>7</scale-grid-item>
+        <scale-grid-item>8</scale-grid-item>
+        <scale-grid-item>9</scale-grid-item>
+        <scale-grid-item>10</scale-grid-item>
+        <scale-grid-item>11</scale-grid-item>
+        <scale-grid-item>12</scale-grid-item>
+        <scale-grid-item>13</scale-grid-item>
+        <scale-grid-item>14</scale-grid-item>
+        <scale-grid-item>15</scale-grid-item>
+        <scale-grid-item>16</scale-grid-item>
+        <scale-grid-item>17</scale-grid-item>
+        <scale-grid-item>18</scale-grid-item>
+      </scale-grid>
+      <div style="height: 800px; padding: 48px 0;">
+        Scroll to test header behavior
+      </div>
+      <div style="height: 800px; padding: 48px 0;">
+        Scroll more to test header behavior
+      </div>
+
+    </div>
+      <div slot="footer">
+        <scale-app-footer variant="minimal" claim-lang="de">
+          <div slot="navigation">
+            <ul style="list-style-type: none; display: inline-flex;">
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__item-link" href="footer1">
+                  <span>Footer 1</span>
+                </a>
+              </li>
+              <li class="footer-navigation__item">
+                <a class="footer-navigation__item-link" href="footer2">
+                  <span>Footer 2</span>
+                </a>
+              </li>
+          </ul>
+        </div>
+      </scale-app-footer>
+    </div>
+    </scale-app-shell>
+  </body>
+</html>
